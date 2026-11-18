@@ -1,0 +1,13 @@
+
+# dot files
+.*
+!.gitignore
+!.gitattributes
+!.action
+
+# SPM files
+Package.resolved
+
+# Output
+Outputs
+

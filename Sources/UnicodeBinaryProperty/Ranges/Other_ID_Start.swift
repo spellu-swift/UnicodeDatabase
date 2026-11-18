@@ -1,0 +1,13 @@
+
+
+extension [ClosedRange<UInt32>] {
+
+	static let Other_ID_Start: [ClosedRange<UInt32>]
+	= [
+		0x1885...0x1886,
+		0x2118...0x2118,
+		0x212E...0x212E,
+		0x309B...0x309C,
+	]
+
+}

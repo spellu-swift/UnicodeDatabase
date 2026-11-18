@@ -1,0 +1,13 @@
+
+
+extension [ClosedRange<UInt32>] {
+
+	static let Bidi_Control: [ClosedRange<UInt32>]
+	= [
+		0x061C...0x061C,
+		0x200E...0x200F,
+		0x202A...0x202E,
+		0x2066...0x2069,
+	]
+
+}

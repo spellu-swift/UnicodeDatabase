@@ -1,0 +1,16 @@
+
+
+extension [ClosedRange<UInt32>] {
+
+	static let Prepended_Concatenation_Mark: [ClosedRange<UInt32>]
+	= [
+		0x0600...0x0605,
+		0x06DD...0x06DD,
+		0x070F...0x070F,
+		0x0890...0x0891,
+		0x08E2...0x08E2,
+		0x110BD...0x110BD,
+		0x110CD...0x110CD,
+	]
+
+}

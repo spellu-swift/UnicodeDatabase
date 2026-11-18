@@ -1,0 +1,12 @@
+
+
+extension [ClosedRange<UInt32>] {
+
+	static let IDS_Binary_Operator: [ClosedRange<UInt32>]
+	= [
+		0x2FF0...0x2FF1,
+		0x2FF4...0x2FFD,
+		0x31EF...0x31EF,
+	]
+
+}

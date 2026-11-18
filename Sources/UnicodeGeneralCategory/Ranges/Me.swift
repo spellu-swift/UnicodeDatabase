@@ -1,0 +1,14 @@
+
+
+extension [ClosedRange<UInt32>] {
+
+	static let Me: [ClosedRange<UInt32>]
+	= [
+		0x0488...0x0489,
+		0x1ABE...0x1ABE,
+		0x20DD...0x20E0,
+		0x20E2...0x20E4,
+		0xA670...0xA672,
+	]
+
+}

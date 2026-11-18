@@ -1,0 +1,14 @@
+
+
+extension [ClosedRange<UInt32>] {
+
+	static let Pattern_White_Space: [ClosedRange<UInt32>]
+	= [
+		0x0009...0x000D,
+		0x0020...0x0020,
+		0x0085...0x0085,
+		0x200E...0x200F,
+		0x2028...0x2029,
+	]
+
+}
