@@ -20,52 +20,60 @@ let package = Package(
 	],
 
 	dependencies: [
-		.package(url: "https://github.com/spellu-swift/Basis", from: "0.10.0"),
+		.package(id: "spellu.Basis", from: "0.10.0"),
 	],
 
 	targets: [
 		.target(
 			name: "UnicodeGeneralCategory",
-			dependencies: ["Basis"],
+			dependencies: [
+				.product(name: "Basis", package: "spellu.Basis"),
+			],
 		),
 		.testTarget(
 			name: "UnicodeGeneralCategoryTests",
 			dependencies: [
-				"Basis",
+				.product(name: "Basis", package: "spellu.Basis"),
+				.product(name: "Testing", package: "spellu.Basis"),
 				"UnicodeGeneralCategory",
-				.product(name: "Testing", package: "Basis"),
 			],
 		),
 
 		.target(
 			name: "UnicodeBinaryProperty",
-			dependencies: ["Basis"],
+			dependencies: [
+				.product(name: "Basis", package: "spellu.Basis"),
+			],
 		),
 		.testTarget(
 			name: "UnicodeBinaryPropertyTests",
 			dependencies: [
-				"Basis",
+				.product(name: "Basis", package: "spellu.Basis"),
+				.product(name: "Testing", package: "spellu.Basis"),
 				"UnicodeBinaryProperty",
-				.product(name: "Testing", package: "Basis"),
 			],
 		),
 
 		.target(
 			name: "UnicodeCaseFolding",
-			dependencies: ["Basis"],
+			dependencies: [
+				.product(name: "Basis", package: "spellu.Basis"),
+			],
 		),
 		.testTarget(
 			name: "UnicodeCaseFoldingTests",
 			dependencies: [
-				"Basis",
+				.product(name: "Basis", package: "spellu.Basis"),
+				.product(name: "Testing", package: "spellu.Basis"),
 				"UnicodeCaseFolding",
-				.product(name: "Testing", package: "Basis"),
 			],
 		),
 
 		.executableTarget(
 			name: "UnicodePropertyGenerator",
-			dependencies: ["Basis"],
+			dependencies: [
+				.product(name: "Basis", package: "spellu.Basis"),
+			],
 		),
 	],
 )
