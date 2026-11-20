@@ -1,4 +1,4 @@
 
-package name:"UnicodeDatabase" version:"0.10.0" tool:swiftpm
+package name:"spellu.UnicodeDatabase" version:"0.10.1" tool:swiftpm
 
-dependency name:SwiftSyntax version:"600"
+dependency name:"spellu.SwiftSyntax" version:"600"
